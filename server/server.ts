@@ -19,6 +19,9 @@ app.post('/api/stripe',express.raw({type:'application/json'}),stripeWebhook)
 app.all('/api/auth/{*any}', toNodeHandler(auth));
 app.use(express.json({limit:'50mb'}))
 
+app.get('/health', (_req: Request, res: Response) => {
+  res.status(200).json({ status: 'ok', service: 'Nexa-Api' });
+});
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Server is Live!');
