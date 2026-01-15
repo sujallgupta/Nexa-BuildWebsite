@@ -34,13 +34,14 @@ Nexa is built for **developers, startups, and non-technical creators** who want 
 
 ## 🏗 System Architecture
 Vite + React (Frontend)
-↓
+        ↓
 Express API + Better Auth (Backend)
-↓
+        ↓
 Prisma ORM
-↓
+        ↓
 PostgreSQL
-↓
+        ↓
 AI Services
+
 
 ---
