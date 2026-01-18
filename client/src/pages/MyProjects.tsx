@@ -27,7 +27,7 @@ const MyProjects = () => {
   const deleteProject = async (projectId: string) => {
     try {
       const confirm = window.confirm(
-        "Are you sure you want to delete this project?"
+        "Are you sure you want to delete this project?",
       );
       if (!confirm) return;
       const { data } = await api.delete(`/api/project/${projectId}`);

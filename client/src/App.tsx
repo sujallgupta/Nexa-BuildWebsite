@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import Projects from "./pages/Projects";
 import MyProjects from "./pages/MyProjects";
@@ -12,6 +12,10 @@ import AuthPage from "./pages/auth/AuthPage";
 import Settings from "./pages/Settings";
 import GotoHome from "./pages/GotoHome";
 import Loading from "./pages/Loading";
+// import Hero from "./pages/Hero";
+import Home from "./pages/Home";
+import Hero from "./pages/Hero";
+
 
 const App = () => {
   const { pathname } = useLocation();
@@ -26,7 +30,9 @@ const App = () => {
       <Toaster />
       {!hideNavbar && <Navbar />}
       <Routes>
-        <Route path="/" element={<Home />} />
+        
+        <Route path="/" element={<Hero />} />
+        <Route path="/generate-website" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/projects/:projectId" element={<Projects />} />
         <Route path="/projects" element={<MyProjects />} />
@@ -39,6 +45,15 @@ const App = () => {
         <Route path="*" element={<GotoHome />} />
         <Route path="/loading" element={<Loading />} />
       </Routes>
+      <div className="fixed inset-0 -z-20">
+  <img
+    src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/hero/bg-gradient-2.png"
+    className="h-full w-full object-cover"
+    alt=""
+  />
+  {/* <div className="absolute inset-0 bg-black/40" /> */}
+</div>
+
     </div>
   );
 };

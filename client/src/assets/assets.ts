@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 
 export const assets = {
-    logo,
+    logo
 };
 
 export const appPlans = [
@@ -49,6 +49,53 @@ export const appPlans = [
         ],
     },
 ]
+export const placeholders = [
+  "Ask Nexa to create a website for my startup...",
+  "Ask Nexa to create a landing page for my app...",
+  "Ask Nexa to create a portfolio website for me...",
+  "Ask Nexa to design an AI product website...",
+  "Ask Nexa to build a SaaS website with login and dashboard...",
+  "Ask Nexa to create a product launch page...",
+  "Ask Nexa to build a business website for my company...",
+  "Ask Nexa to design a personal brand website...",
+  "Ask Nexa to create a website to validate my idea...",
+  "Ask Nexa to build a startup MVP website...",
+  "Ask Nexa to create a website like Notion / Stripe / Airbnb...",
+  "Ask Nexa to design a modern website from my idea...",
+];
+
+export const quickPrompts = [
+  {
+    label: "Startup Website",
+    prompt:
+      "Create a modern startup website with a strong hero section, clear value proposition, product overview, feature highlights, testimonials, and early access signup."
+  },
+  {
+    label: "SaaS Product",
+    prompt:
+      "Build a SaaS product website with feature sections, pricing tables, onboarding flow, authentication pages, and a clean user dashboard layout."
+  },
+  {
+    label: "AI Tool",
+    prompt:
+      "Create a professional AI product website with prompt input interface, use cases, live demos, pricing plans, and documentation pages."
+  },
+  {
+    label: "Product Launch",
+    prompt:
+      "Design a high-conversion product launch website with waitlist signup, feature highlights, social proof, FAQs, and strong call-to-action sections."
+  },
+  {
+    label: "Startup Portfolio",
+    prompt:
+      "Build a startup-style portfolio website to showcase projects, case studies, achievements, testimonials, and a strong personal brand presence."
+  },
+  {
+    label: "Tech Company",
+    prompt:
+      "Create a modern tech company website with services, solutions, blog, careers page, case studies, and a customer contact system."
+  },
+];
 
 
 export const iframeScript = `

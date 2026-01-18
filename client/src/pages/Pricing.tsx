@@ -1,6 +1,5 @@
 import React from "react";
 import { appPlans } from "../assets/assets";
-import Footer from "../components/Footer";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
 import api from "@/configs/axios";
@@ -16,26 +15,32 @@ interface Plan {
 }
 
 const Pricing = () => {
-  const{data:session} = authClient.useSession();
+  const { data: session } = authClient.useSession();
   const [plans] = React.useState<Plan[]>(appPlans);
 
   const handlePurchase = async (planId: string) => {
-    // handle purchase
     try {
-      if(!session?.user) return toast.message("Please login to continue")      
-      const {data} = await api.post('/api/user/purchase-credits',{planId})
+      if (!session?.user) return toast.message("Please login to continue");
+      const { data } = await api.post("/api/user/purchase-credits", { planId });
       window.location.href = data.payment_link;
-    } catch (error:any) {
+    } catch (error: any) {
       toast.error(error?.response?.data?.message || error.message);
       console.log(error);
     }
-
   };
 
   return (
     <>
       <div className="w-full max-w-5xl mx-auto z-20 max-md:px-4 min-h-[80vh]">
-        <div className="text-center mt-16">
+
+        
+        <div className="flex justify-center mt-10">
+          <span className="px-4 py-1 rounded-full text-xs font-semibold tracking-wider text-white bg-gradient-to-r from-indigo-500 to-purple-600 shadow-md">
+            PRICING
+          </span>
+        </div>
+
+        <div className="text-center mt-6">
           <h2 className="text-gray-100 text-3xl font-medium">
             Choose Your Plan
           </h2>
@@ -59,7 +64,6 @@ const Pricing = () => {
                   }
                 `}
               >
-                {/* MOST POPULAR BADGE */}
                 {plan.popular && (
                   <span
                     className="
@@ -125,17 +129,16 @@ const Pricing = () => {
           </div>
         </div>
 
-        <p className="mx-auto text-center text-sm max-w-md mt-10 text-white/60 font-light">
-          <p className="mx-auto text-center text-sm max-w-md mt-10 text-white/60 font-light">
-            Each{" "}
-            <span className="text-white">project creation or revision</span>{" "}
-            consumes <span className="text-white">5 credits</span>. You can
-            purchase additional credits anytime as your needs grow.
-          </p>
-        </p>
+        
+        <div className="mx-auto text-center text-sm max-w-md mt-10 text-white/60 font-light">
+          Each{" "}
+          <span className="text-white">project creation or revision</span>{" "}
+          consumes <span className="text-white">5 credits</span>. You can
+          purchase additional credits anytime as your needs grow.
+        </div>
       </div>
 
-      <Footer />
+      
     </>
   );
 };
