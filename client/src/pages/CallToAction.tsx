@@ -43,8 +43,10 @@ export default function CallToAction() {
           w-44 md:w-52 mt-20
           opacity-90
           contrast-125 brightness-90 saturate-125
-          drop-shadow-[0_0_60px_rgba(99,102,241,0.35)]
+          drop-shadow-[0_0_60px_rgba(99,102,241,0.35)] cursor-pointer
         "
+       onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+
       />
     </section>
   );

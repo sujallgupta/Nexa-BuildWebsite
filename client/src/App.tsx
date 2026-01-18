@@ -45,16 +45,9 @@ const App = () => {
         <Route path="*" element={<GotoHome />} />
         <Route path="/loading" element={<Loading />} />
       </Routes>
-      <div className="fixed inset-0 -z-20">
-  <img
-    src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/hero/bg-gradient-2.png"
-    className="h-full w-full object-cover"
-    alt=""
-  />
-  {/* <div className="absolute inset-0 bg-black/40" /> */}
-</div>
+      
 
-    </div>
+     </div> 
   );
 };
 
