@@ -8,7 +8,7 @@ export default function CallToAction() {
      
       <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 backdrop-blur text-xs text-gray-200">
         <SparklesIcon className="size-3.5 text-indigo-400" />
-        Build with Nexa in seconds
+        Build with Nexa in minutes.
       </div>
 
       <h3 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-semibold text-center max-w-2xl leading-tight bg-gradient-to-r from-white via-indigo-200 to-purple-300 bg-clip-text text-transparent">
