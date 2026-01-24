@@ -32,8 +32,6 @@ const Pricing = () => {
   return (
     <>
       <div className="w-full max-w-5xl mx-auto z-20 max-md:px-4 min-h-[80vh]">
-
-        
         <div className="flex justify-center mt-10">
           <span className="px-4 py-1 rounded-full text-xs font-semibold tracking-wider text-white bg-gradient-to-r from-indigo-500 to-purple-600 shadow-md">
             PRICING
@@ -129,16 +127,12 @@ const Pricing = () => {
           </div>
         </div>
 
-        
         <div className="mx-auto text-center text-sm max-w-md mt-10 text-white/60 font-light">
-          Each{" "}
-          <span className="text-white">project creation or revision</span>{" "}
+          Each <span className="text-white">project creation or revision</span>{" "}
           consumes <span className="text-white">5 credits</span>. You can
           purchase additional credits anytime as your needs grow.
         </div>
       </div>
-
-      
     </>
   );
 };

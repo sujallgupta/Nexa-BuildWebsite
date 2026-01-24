@@ -46,7 +46,6 @@ export default function Faq() {
 
   return (
     <section className="relative mt-17 px-6 text-white">
-   
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[420px] h-[420px] bg-indigo-500/10 blur-[120px] -z-10" />
 
       <SectionTitle
@@ -109,9 +108,7 @@ export default function Faq() {
               </div>
             </motion.div>
           );
-        })
-        }
-       
+        })}
       </div>
     </section>
   );

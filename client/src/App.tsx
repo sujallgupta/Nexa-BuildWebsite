@@ -12,7 +12,6 @@ import AuthPage from "./pages/auth/AuthPage";
 import Settings from "./pages/Settings";
 import GotoHome from "./pages/GotoHome";
 import Loading from "./pages/Loading";
-// import Hero from "./pages/Hero";
 import Home from "./pages/Home";
 import Hero from "./pages/Hero";
 
