@@ -8,7 +8,7 @@ export default function CallToAction() {
       {/* Badge */}
       <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 backdrop-blur text-xs text-gray-200">
         <SparklesIcon className="size-3.5 text-indigo-400" />
-        Build with Nexa in minutes
+        Build with Nexa in seconds
       </div>
 
       {/* Heading */}
