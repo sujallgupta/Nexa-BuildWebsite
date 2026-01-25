@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 import { AccountSettingsCards, ChangePasswordCard, DeleteAccountCard } from "@daveyplate/better-auth-ui"
 import { useNavigate } from "react-router-dom"
-=======
-import { AccountSettingsCards,ChangePasswordCard, DeleteAccountCard } from "@daveyplate/better-auth-ui"
->>>>>>> 01bfe26bb90e50bbda4bd8c0142322382e5249b3
+
 
 const Settings = () => {
   const navigate = useNavigate()
