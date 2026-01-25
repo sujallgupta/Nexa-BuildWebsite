@@ -32,6 +32,7 @@ const Navbar = () => {
 
   return (
     <>
+     
       <motion.div
         className="fixed inset-0 -z-20 overflow-hidden pointer-events-none"
         initial={{ opacity: 0.5 }}
@@ -43,7 +44,10 @@ const Navbar = () => {
         <div className="absolute top-[15%] right-[18%] size-[420px] rounded-full bg-blue-600/25 blur-[130px]" />
       </motion.div>
 
+     
       <nav className="z-20 flex items-center justify-between w-full py-1 px-3 md:px-16 lg:px-24 xl:px-32 backdrop-blur border-b border-white/10 text-white">
+
+       
         <Link to="/" className="flex items-center gap-2">
           <img
             src={assets.logo}
@@ -52,6 +56,7 @@ const Navbar = () => {
           />
         </Link>
 
+        
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
           {[
             { name: "Home", path: "/generate-website" },
@@ -70,7 +75,9 @@ const Navbar = () => {
           ))}
         </div>
 
+        {/* Right side */}
         <div className="flex items-center gap-3">
+
           {!session?.user ? (
             <button
               onClick={() => navigate("/auth/signin")}
@@ -130,6 +137,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-xl text-white flex flex-col items-center justify-center text-lg gap-8 md:hidden">
+
           {[
             { name: "Home", path: "/generate-website" },
             { name: "My Projects", path: "/projects" },
@@ -160,3 +168,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

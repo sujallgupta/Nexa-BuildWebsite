@@ -4,6 +4,10 @@ const Footer = () => {
       <p>
         © {new Date().getFullYear()}{" "}
         <span >Nexa</span>. All rights reserved.
+        <br/>
+        <p>
+          Version 2.2.0
+        </p>
       </p>
     </footer>
   );
