@@ -1,3 +1,4 @@
+import { assets } from "@/assets/assets"
 import { AccountSettingsCards,ChangePasswordCard, DeleteAccountCard } from "@daveyplate/better-auth-ui"
 
 const Settings = () => {
@@ -20,6 +21,13 @@ const Settings = () => {
         
       }} />
         </div>
+        <div className="flex flex-col items-center gap-3 pt-4">
+  <p className="text-sm text-gray-400 tracking-wide">
+    Version <span className="text-gray-300 font-medium">2.2.0</span>
+  </p>
+
+</div>
+
     </div>
   )
 }
