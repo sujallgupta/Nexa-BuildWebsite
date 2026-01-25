@@ -8,7 +8,6 @@ import {
   MessageSquare,
 } from "lucide-react";
 import { toast } from "sonner";
-import Footer from "@/components/Footer";
 
 const Support: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
