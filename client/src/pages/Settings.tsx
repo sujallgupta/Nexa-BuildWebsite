@@ -1,4 +1,3 @@
-import { assets } from "@/assets/assets"
 import { AccountSettingsCards,ChangePasswordCard, DeleteAccountCard } from "@daveyplate/better-auth-ui"
 
 const Settings = () => {
