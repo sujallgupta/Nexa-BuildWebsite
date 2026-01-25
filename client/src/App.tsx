@@ -14,6 +14,7 @@ import GotoHome from "./pages/GotoHome";
 import Loading from "./pages/Loading";
 import Home from "./pages/Home";
 import Hero from "./pages/Hero";
+import Support from "./pages/Support";
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/view/:projectId" element={<View />} />
         <Route path="/auth/:pathname" element={<AuthPage />} />
         <Route path="/account/settings" element={<Settings />} />
+        <Route path="/support" element={<Support />} />
         <Route path="*" element={<GotoHome />} />
         <Route path="/loading" element={<Loading />} />
       </Routes>
